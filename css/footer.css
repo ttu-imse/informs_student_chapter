@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 10%;
+    background-color: black;
+}
+
+.footer_content{
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footer_content h1{
+    color: red;
+}
