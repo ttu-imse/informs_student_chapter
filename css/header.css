@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1001;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: white;
+    color: #333;
+}
+
+.logo_lockup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+    padding-left: 1%;
+}
+
+.logo_lockup a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_lockup img{
+    max-width: auto;
+    height: 70px;
+}
+
+.logo_lockup h1{
+    display: inline;
+    font-family: ITC Charter W01, Georgia, Garamond, serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1em;
+    width: 100%;
+}
