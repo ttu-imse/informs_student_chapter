@@ -14,26 +14,30 @@
     height: auto;
 }
 
-.slider .navigation{
-    position: absolute;
-    top: 50%;
-    width: 100%;
+.slide_navigator{
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    position: absolute;
+    padding: 15px;
+    transform: translateY(-100%);
 }
 
-.slider .navigation button{
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
+.dot{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
     border-radius: 50%;
-    transition: background 0.3s;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
 }
 
-.slider .navigation button:hover{
-    background: rgba(0, 0, 0, 0.8);
+.dot:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+    border: 1px solid transparent;
+}
+
+.active{
+    background-color: red;
 }

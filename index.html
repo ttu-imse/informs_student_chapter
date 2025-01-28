@@ -19,22 +19,33 @@
 
 <body>
   <header>
-    <div class="logo_lockup">
-      <a href="http://www.ttu.edu/">
-        <img src="assets/ttu_icon.png">
-      </a>
-
-      <h1>TEXAS TECH UNIVERSITY</h1>
+    <div class="static_header">
+      <nav>
+        <a href="http://directory.texastech.edu/" tabindex="2" aria-label="TTU System Online Directory">Directory</a>
+        <a href="http://raiderlink.ttu.edu/" tabindex="3" aria-label="Raiderlink">Raiderlink</a>
+        <a href="http://www.ttu.edu/site/" tabindex="4" aria-label="Site Index">A-Z Index</a>
+        <a href="#translate" class="ttu_translate_trigger">Translate</a>   
+      </nav>
     </div>
 
-    <a href="https://www.google.com">members</a>
+    <div class="fixed_header">
+      <div class="logo_lockup">
+        <a href="http://www.ttu.edu/">
+          <img src="assets/ttu_icon.png">
+        </a>
+  
+        <h1>TEXAS TECH UNIVERSITY</h1>
+      </div>
 
-    <a href="https://www.google.com">oi</a>
+      <a href="https://www.google.com">members</a>
+
+      <a href="https://www.google.com">outro link</a>
+    </div>
   </header>
 
-  <h1 class="background_text">Born to Win</h1>
-
   <main>
+    <h1 class="background_text">Born to Win</h1>
+
     <div class="main_content">
       <h1>TTU Students Chapter</h1>
 
@@ -50,9 +61,10 @@
           <img src="assets/slides/slide3.jpg" alt="Slide 3">
         </div>
 
-        <div class="navigation">
-          <button class="prev">&lt;</button>
-          <button class="next">&gt;</button>
+        <div class="slide_navigator">
+          <span class="dot active" onclick="showSlide(0)"></span>
+          <span class="dot" onclick="showSlide(1)"></span>
+          <span class="dot" onclick="showSlide(2)"></span>
         </div>
       </div>
 
@@ -81,7 +93,8 @@
     </div>
   </main>
 
-  <script src="js/script.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/fixed_header.js"></script>
 </body>
 
 </html>
