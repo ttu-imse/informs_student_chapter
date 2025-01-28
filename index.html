@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTU INFORMS</title>
 
-  <title>TTU Students Chapter</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="assets/ttu_icon.png">
 
-  <link rel="shortcut icon" type="image" href="assets/ttu_icon.png">
+  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/image_slider.css">
+  
 </head>
 
-
 <body>
+  <!-- Header -->
   <header>
     <div class="logo_lockup">
-      <a href="http://www.ttu.edu/">
-        <img src="assets/ttu_icon.png">
+      <a href="https://www.depts.ttu.edu/imse/">
+        <img src="assets/Department of Industrial, Manufacturing and Systems Engineering fl4C.png" alt="TTU IMSE">
       </a>
-
-      <h1>TEXAS TECH UNIVERSITY</h1>
     </div>
-
-    <a href="https://www.google.com">members</a>
-
-    <a href="https://www.google.com">oi</a>
+    <div class="nav_links">
+      <a href="https://1drv.ms/p/c/53908bd39e09cffb/EVJ4I-NDmalLitpWQ4UHMgoBcXsX95OgOjWG_d1vxleM4w?e=DO6Ott">Officers</a>
+      <a href="https://1drv.ms/x/c/53908bd39e09cffb/EWoArBOuGLFKvD7dmRVRWIQBDZBeXEuU4B-mZUsA73FsDw?e=Clxv75">Events</a>
+      <a href="https://www.youtube.com/watch?v=2luoOOsjRb4">Considering a PhD?</a>
+    </div>
   </header>
 
-  <h1 class="background_text">Born to Win</h1>
-
+  <!-- Main Content -->
   <main>
     <div class="main_content">
-      <h1>TTU Students Chapter</h1>
-
+      <h1>TTU INFORMS Student Chapter</h1>
       <h4>
-        The INFORMS Student Chapter at Texas Tech is affiliated with INFORMS (Institute for Operations Research and Management Science),
-        the largest institute in the world for the professionals in the field of Operations Research, Management Sciences, and advanced analytics.
+        The INFORMS Student Chapter at Texas Tech is affiliated with INFORMS (Institute for Operations Research and Management Science), the largest institute in the world for the professionals in the field of Operations Research, Management Sciences, and advanced analytics.
       </h4>
 
       <div class="image_slider">
         <div class="slides">
           <img src="assets/slides/slide1.jpeg" alt="Slide 1">
-          <img src="assets/slides/slide2.jpeg" alt="Slide 2">
+          <img src="assets/slides/slide2.jpg" alt="Slide 2">
           <img src="assets/slides/slide3.jpg" alt="Slide 3">
         </div>
-
+      
+        <!-- Navigation Arrows -->
         <div class="navigation">
-          <button class="prev">&lt;</button>
-          <button class="next">&gt;</button>
+          <button class="prev" onclick="changeSlide(-1)">&#8249;</button>
+          <button class="next" onclick="changeSlide(1)">&#8250;</button>
         </div>
-      </div>
+      
+        <!-- Dots Navigation -->
+        <div class="dots">
+          <span class="dot active" onclick="moveToSlide(0)"></span>
+          <span class="dot" onclick="moveToSlide(1)"></span>
+          <span class="dot" onclick="moveToSlide(2)"></span>
+        </div>
+      </div>      
+      
+
 
       <h4>
         The INFORMS Student Chapter at Texas Tech aims to
       </h4>
-
       <ul>
-        <li>Provide a community at GT for graduate and undergraduate students interested in OR, MS, Analytics, and Data Science;</li>
-        <li>Promote an integrated culture and communications among theoretical research and applications on OR, MS, Analytics, and Data Science;</li>
-        <li>Provide mentoring and career development opportunities for students;</li>
-        <li>Establish effective knowledge sharing platforms for inspiring emerging topics in OR/MS related fields.</li>
+        <li>Encourage TTU students and facilitate interest in operations research (OR), management sciences (MS), and analytics.</li>
+        <li>Provide an informal means of sharing information about the methods and techniques of OR/MS.</li>
+        <li>Provide PhD students with opportunities for professional development.</li>
+        <li>Offer support and foster inclusion for all PhD students, recognizing that the PhD journey is challenging, especially for the many international students who face unique hurdles.</li>
       </ul>
 
       <h4>
-        The INFORMS Student Chapter at Texas Tech is in coordination with INFORMS, Texas Tech, and H. Milton Stewart School of Industrial and Systems Engineering.
-        We have members and serve students across a variety of undergraduate and graduate programs at GT,
-        including engineering, operations research, business, mathematics, and statistics.
+        The INFORMS Student Chapter at Texas Tech is in coordination with INFORMS, Texas Tech University, and Edward E. Whitacre Jr. College of Engineering - Department of Industrial and Systems Engineering.
       </h4>
     </div>
 
+    <!-- Footer -->
     <div class="footer">
       <div class="footer_content">
-        <h1>TEXAS TECH UNIVERSITY</h1>
+        <h1>TEXAS TECH UNIVERSITY - From here it's possible !</h1>
       </div>
     </div>
   </main>
 
+  <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
 

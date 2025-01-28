@@ -18,7 +18,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5%;
-    padding-left: 1%;
+    padding-left: 0.5%;
 }
 
 .logo_lockup a{
@@ -29,7 +29,7 @@ header{
 
 .logo_lockup img{
     max-width: auto;
-    height: 70px;
+    height: 90px;
 }
 
 .logo_lockup h1{

@@ -1,26 +1,32 @@
 const slides = document.querySelector('.slides');
-const images = slides.querySelectorAll('img');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-let index = 0;
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0; // Track the current slide index
 
-function showSlide(index) {
-    const slideWidth = images[0].clientWidth;
+function moveToSlide(index) {
+    const slideWidth = slides.clientWidth;
     slides.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    // Update active dot
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+    });
+
+    // Update the current index
+    currentIndex = index;
 }
 
-nextButton.addEventListener('click', () => {
-    index = (index + 1) % images.length;
-    showSlide(index);
-});
+function changeSlide(step) {
+    const totalSlides = dots.length;
 
-prevButton.addEventListener('click', () => {
-    index = (index - 1 + images.length) % images.length;
-    showSlide(index);
-});
+    // Calculate the new index
+    let newIndex = currentIndex + step;
 
-// Auto-slide every 3 seconds (optional)
-setInterval(() => {
-    index = (index + 1) % images.length;
-    showSlide(index);
-}, 3000);
+    // Wrap around if index goes out of bounds
+    if (newIndex < 0) {
+        newIndex = totalSlides - 1;
+    } else if (newIndex >= totalSlides) {
+        newIndex = 0;
+    }
+
+    moveToSlide(newIndex);
+}
