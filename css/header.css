@@ -1,16 +1,41 @@
 header{
+    width: 100%;
+    color: #333;
+    background-color: white;
+}
+
+.static_header{
+    display: flex;
+    justify-content: right;
+    position: static;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.static_header a{
+    margin-right: 1vw;
+    font-size: 11.5px;
+    color: #555;
+    box-shadow: 0 0 0 #1b1b1b;
+    text-decoration: underline;
+    transition: all .4s ease;
+}
+
+.ttu_translate_trigger{
+    padding-left: 18px;
+    background: url('../assets/icons/google-translate.svg') no-repeat left center;
+}
+
+.fixed_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: auto;
-    z-index: 1001;
-    border-bottom: 1px solid #e6e6e6;
+    z-index: 100;
     background-color: white;
-    color: #333;
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .logo_lockup{
