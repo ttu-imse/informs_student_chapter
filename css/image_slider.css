@@ -1,19 +1,89 @@
-.image_slider{
-    width: 40%;
+.image_slider {
+    width: 60%;
+    margin: 40px auto;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    position: relative;
 }
 
-.slides{
+.slides {
     display: flex;
-    transition: transform 0.5s ease-in-out, opacity 0.5s;
+    transition: transform 0.6s ease-in-out;
 }
 
-.slides img{
+.slides img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
+/* Navigation Arrows */
+.navigation {
+    position: absolute;
+    top: 50%; /* Center the arrows vertically */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none; /* Prevent clicks outside buttons */
+}
+
+.navigation button {
+    pointer-events: all; /* Allow clicking on buttons */
+    background: rgba(0, 0, 0, 0.2); /* Increase transparency */
+    border: none;
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white for the arrow */
+    padding: 8px; /* Reduce the size */
+    cursor: pointer;
+    font-size: 18px; /* Slightly smaller font size */
+    border-radius: 50%; /* Rounded design */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: none; /* Remove shadow for minimalistic look */
+}
+
+.navigation button:hover {
+    background: rgba(0, 0, 0, 0.4); /* Slightly darker on hover */
+    color: rgba(255, 255, 255, 1); /* Fully opaque arrow on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.navigation button:active {
+    transform: scale(1.05); /* Subtle click effect */
+}
+
+
+/* Dots Navigation */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dots .dot:hover {
+    background-color: #bbb;
+    transform: scale(1.2);
+}
+
+.dots .dot.active {
+    background-color: #333;
+    transform: scale(1.4);
+}
 .slide_navigator{
     display: flex;
     justify-content: space-between;
