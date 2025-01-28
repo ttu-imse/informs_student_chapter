@@ -1,3 +1,9 @@
+# Website
+
+The group website is currently hosted at: 
+
+https://ttu-imse.github.io/informs_student_chapter/
+
 # Project Setup Guide
 
 ---
@@ -14,10 +20,11 @@ Before you begin, ensure you have the following tools installed:
 ## Running the Project
 
 ### Step 1: Clone or Download the Project
+Get the project via one of the following options:
 - **Option 1: Clone via git**  
   Open a terminal and run:  
   ```bash
-  git clone <repository-url>
+  git clone https://github.com/ttu-imse/informs_student_chapter
 - **Option 2: Download ZIP**
     - Download the repository as a ZIP file from the project page at https://github.com/ttu-imse/informs_student_chapter by clicking in _Code_ green tab
     - Extract (unzip) the contents to a folder of your choice.
@@ -62,9 +69,3 @@ git commit -m "Your commit message"
 git push
 ```
 Your updates are now live!
-
-# Project 
-
-The group website is currently hosted at: 
-
-https://ttu-imse.github.io/informs_student_chapter/
