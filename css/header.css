@@ -43,7 +43,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5%;
-    padding-left: 0.5%;
+    padding-left: 2%;
 }
 
 .logo_lockup a{
@@ -65,4 +65,45 @@ header{
     letter-spacing: 1px;
     line-height: 1em;
     width: 100%;
+}
+
+/* Navigation Links Container */
+.nav_links{
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Align everything to the left */
+    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
+    gap: 50px; /* Add spacing between links */
+    flex-grow: 1; /* Allow links to grow and use available space */
+}
+
+/* Navigation Links */
+.nav_links a{
+    text-decoration: none; /* Remove underlines */
+    color: #333; /* Dark color for links */
+    font-size: 18px; /* Adjust font size */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-weight: 600; /* Make links semi-bold */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 1px; /* Add spacing between letters */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    white-space: nowrap; /* Prevent text wrapping within a single link */
+}
+
+.nav_links a:hover{
+    color: red; /* Change color on hover */
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle text shadow on hover */
+}
+
+/* For smaller screens: Make links stack vertically */
+@media (max-width: 768px){
+    header{
+        flex-direction: column; /* Stack logo and links vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .nav_links{
+        justify-content: flex-start; /* Align links to the left */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
 }

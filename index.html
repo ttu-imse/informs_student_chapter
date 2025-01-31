@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>TTU INFORMS</title>
 
   <!-- Favicon -->
@@ -15,21 +16,32 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/image_slider.css">
-  
 </head>
 
 <body>
   <!-- Header -->
   <header>
-    <div class="logo_lockup">
-      <a href="https://www.depts.ttu.edu/imse/">
-        <img src="assets/Department of Industrial, Manufacturing and Systems Engineering fl4C.png" alt="TTU IMSE">
-      </a>
+    <div class="static_header">
+      <nav>
+        <a href="http://directory.texastech.edu/" tabindex="2" aria-label="TTU System Online Directory">Directory</a>
+        <a href="http://raiderlink.ttu.edu/" tabindex="3" aria-label="Raiderlink">Raiderlink</a>
+        <a href="http://www.ttu.edu/site/" tabindex="4" aria-label="Site Index">A-Z Index</a>
+        <a href="#translate" class="ttu_translate_trigger">Translate</a>   
+      </nav>
     </div>
-    <div class="nav_links">
-      <a href="https://1drv.ms/p/c/53908bd39e09cffb/EVJ4I-NDmalLitpWQ4UHMgoBcXsX95OgOjWG_d1vxleM4w?e=DO6Ott">Officers</a>
-      <a href="https://1drv.ms/x/c/53908bd39e09cffb/EWoArBOuGLFKvD7dmRVRWIQBDZBeXEuU4B-mZUsA73FsDw?e=Clxv75">Events</a>
-      <a href="https://www.youtube.com/watch?v=2luoOOsjRb4">Considering a PhD?</a>
+
+    <div class="fixed_header">
+      <div class="logo_lockup">
+        <a href="https://www.depts.ttu.edu/imse/">
+          <img src="assets/Department of Industrial, Manufacturing and Systems Engineering fl4C.png" alt="TTU IMSE">
+        </a>
+      </div>
+
+      <div class="nav_links">
+        <a href="https://1drv.ms/p/c/53908bd39e09cffb/EVJ4I-NDmalLitpWQ4UHMgoBcXsX95OgOjWG_d1vxleM4w?e=DO6Ott">Officers</a>
+        <a href="https://1drv.ms/x/c/53908bd39e09cffb/EWoArBOuGLFKvD7dmRVRWIQBDZBeXEuU4B-mZUsA73FsDw?e=Clxv75">Events</a>
+        <a href="https://www.youtube.com/watch?v=2luoOOsjRb4">Considering a PhD?</a>
+      </div>
     </div>
   </header>
 
@@ -39,6 +51,7 @@
 
     <div class="main_content">
       <h1>TTU INFORMS Student Chapter</h1>
+
       <h4>
         The INFORMS Student Chapter at Texas Tech is affiliated with INFORMS (Institute for Operations Research and Management Science), the largest institute in the world for the professionals in the field of Operations Research, Management Sciences, and advanced analytics.
       </h4>
@@ -55,20 +68,12 @@
           <button class="prev" onclick="changeSlide(-1)">&#8249;</button>
           <button class="next" onclick="changeSlide(1)">&#8250;</button>
         </div>
-      
-        <!-- Dots Navigation -->
-        <div class="dots">
-          <span class="dot active" onclick="moveToSlide(0)"></span>
-          <span class="dot" onclick="moveToSlide(1)"></span>
-          <span class="dot" onclick="moveToSlide(2)"></span>
-        </div>
       </div>      
       
-
-
       <h4>
         The INFORMS Student Chapter at Texas Tech aims to
       </h4>
+
       <ul>
         <li>Encourage TTU students and facilitate interest in operations research (OR), management sciences (MS), and analytics.</li>
         <li>Provide an informal means of sharing information about the methods and techniques of OR/MS.</li>
@@ -90,7 +95,6 @@
   </main>
 
   <!-- JavaScript -->
-  <script src="js/script.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/fixed_header.js"></script>
 </body>

@@ -1,24 +1,26 @@
 const slides = document.querySelector('.slides');
 const images = slides.querySelectorAll('img');
-const dots = document.querySelectorAll('.dot');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let index = 0;
 
-let previousI = 0;
-let currentI = 0;
-
-// show slide and highlight dot
-function showSlide(i){
-    // show slide
+function showSlide(index) {
     const slideWidth = images[0].clientWidth;
-    slides.style.transform = `translateX(-${i * slideWidth}px)`;
-
-    // highlight dot
-    dots[currentI].classList.remove('active');
-    dots[i].classList.add('active');
-    currentI = i;
+    slides.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-// auto slide every 3 seconds
+nextButton.addEventListener('click', () => {
+    index = (index + 1) % images.length;
+    showSlide(index);
+});
+
+prevButton.addEventListener('click', () => {
+    index = (index - 1 + images.length) % images.length;
+    showSlide(index);
+});
+
+// Auto-slide every 3 seconds (optional)
 setInterval(() => {
-    previousI = (previousI + 1) % images.length;
-    showSlide(previousI);
+    index = (index + 1) % images.length;
+    showSlide(index);
 }, 3000);
