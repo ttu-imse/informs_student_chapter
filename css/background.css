@@ -1,0 +1,26 @@
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../assets/campus.png');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+}
+
+.background div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.background div h2{
+    margin: 0;
+}

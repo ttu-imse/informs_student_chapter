@@ -5,9 +5,11 @@ document.addEventListener("scroll", () => {
     if (window.scrollY > staticHeader.offsetHeight){
         // When scrolling down past the static header, show the fixed header
         fixedHeader.style.top = "0";
+        fixedHeader.style.position = "fixed";
     }
     else{
         // When scrolling back up to the top, reset both headers
-        fixedHeader.style.top = null; // Hide the fixed header
+        fixedHeader.style.top = null;
+        fixedHeader.style.position = "static";
     }
 });

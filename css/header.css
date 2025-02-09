@@ -1,5 +1,6 @@
 header{
     width: 100%;
+    height: 150px;
     color: #333;
     background-color: white;
 }
@@ -7,10 +8,10 @@ header{
 .static_header{
     display: flex;
     justify-content: right;
+    align-items: center;
     position: static;
     width: 100%;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    height: 40px;
 }
 
 .static_header a{
@@ -31,8 +32,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: static;
     width: 100%;
+    height: 110px;
     z-index: 100;
     background-color: white;
     border-bottom: 1px solid #e6e6e6;
