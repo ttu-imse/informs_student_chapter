@@ -8,3 +8,27 @@ body{
     height: 100%;
     margin: 0;
 }
+
+.officer img {
+    width: 300px;   /* Increase width */
+    height: auto;   /* Automatically adjust height to maintain aspect ratio */
+    max-height: none; /* Allow height to grow as needed */
+    object-fit: contain; /* Ensures the entire image is visible */
+}
+
+.officers_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    max-width: 900px; /* Adjust width if needed */
+    margin: auto; /* Center the section */
+}
+
+.officer {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
