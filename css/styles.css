@@ -10,10 +10,10 @@ body{
 }
 
 .officer img {
-    width: 300px;   /* Increase width */
-    height: auto;   /* Automatically adjust height to maintain aspect ratio */
-    max-height: none; /* Allow height to grow as needed */
-    object-fit: contain; /* Ensures the entire image is visible */
+    width: 300px;    /* Fixed width */
+    height: 400px;   /* Fixed height to create a uniform size */
+    object-fit: cover; /* Ensures the image fills the box and crops the excess */
+    max-height: 400px; /* Prevents the height from growing beyond the set value */
 }
 
 .officers_list {
@@ -31,4 +31,5 @@ body{
     border-radius: 10px;
     background: #f9f9f9;
 }
+
 
