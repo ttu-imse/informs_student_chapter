@@ -1,12 +1,12 @@
-main{
+main {
     width: 100%;
 }
 
-.main_content{
+.main-content {
     padding: 0 15%;
 }
 
-.main_content h4{
+.main-content h4 {
     font-stretch: normal;
     font-style: normal;
     font-weight: 400;
@@ -15,8 +15,8 @@ main{
 }
 
 /* in mobile */
-@media screen and (max-width: 768px){
-    .main_content{
+@media screen and (max-width: 768px) {
+    .main-content {
         padding: 0 10%;
     }
 }

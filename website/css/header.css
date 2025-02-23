@@ -1,11 +1,11 @@
-header{
+header {
     width: 100%;
     height: 150px;
     color: #333;
     background-color: white;
 }
 
-.static_header{
+.static-header {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -14,7 +14,7 @@ header{
     height: 40px;
 }
 
-.static_header a{
+.static-header a {
     margin-right: 1vw;
     font-size: 11.5px;
     color: #555;
@@ -23,12 +23,12 @@ header{
     transition: all .4s ease;
 }
 
-.ttu_translate_trigger{
+.ttu-translate-trigger {
     padding-left: 18px;
     background: url('../assets/icons/google-translate.svg') no-repeat left center;
 }
 
-.fixed_header{
+.fixed-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +40,7 @@ header{
     border-bottom: 1px solid #e6e6e6;
 }
 
-.logo_lockup{
+.logo-lockup {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,18 +48,18 @@ header{
     padding-left: 2%;
 }
 
-.logo_lockup a{
+.logo-lockup a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo_lockup img{
+.logo-lockup img {
     max-width: auto;
     height: 90px;
 }
 
-.logo_lockup h1{
+.logo-lockup h1 {
     display: inline;
     font-family: ITC Charter W01, Georgia, Garamond, serif;
     font-size: 1.5em;
@@ -70,7 +70,7 @@ header{
 }
 
 /* Navigation Links Container */
-.nav_links{
+.nav-links {
     display: flex; /* Arrange links horizontally */
     justify-content: center; /* Align everything to the left */
     flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
@@ -79,7 +79,7 @@ header{
 }
 
 /* Navigation Links */
-.nav_links a{
+.nav-links a {
     text-decoration: none; /* Remove underlines */
     color: #333; /* Dark color for links */
     font-size: 18px; /* Adjust font size */
@@ -91,55 +91,86 @@ header{
     white-space: nowrap; /* Prevent text wrapping within a single link */
 }
 
-.nav_links a:hover{
+.nav-links a:hover {
     color: red; /* Change color on hover */
     text-decoration: underline;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle text shadow on hover */
 }
 
-.nav_links_mobile{
+.nav-links-mobile {
     display: none;
 }
 
 /* in mobile */
-@media screen and (max-width: 768px){
-    header{
+@media screen and (max-width: 768px) {
+    header {
         height: 110px;
     }
 
-    .static_header{
+    .static-header {
         display: none;
     }
     
-    .logo_lockup img{
+    .logo-lockup img {
         max-width: auto;
         height: 70px;
     }
 
-    .nav_links{
+    .nav-links {
         display: none;
     }
 
-    .nav_links_mobile{
+    .nav-links-mobile {
         display: block;
+        z-index: 11;
     }
 
-    .menu-icon{
-        width: fit-content;
-        padding: 3px 7px;
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 24px;
+        padding: 10px;
         margin-right: 10px;
-        font-size: 24px;
-        color: white;
-        background: #333;
+        background-color: white;
+        transition: transform 0.3s ease 0.02s;
+    }
+    
+    .menu-icon.active {
+        transform: translate(0, 167px);
     }
 
-    .nav_links_mobile ul{
+    .menu-icon span {
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        transition: all 0.3s ease;
+    }
+
+    .menu-icon.active span {
+        transition: all 0.3s ease 0.2s;
+    }
+
+    .menu-icon.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5.5px, 5.5px);
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5.5px, -5.5px);
+    }
+
+    .nav-links-mobile ul {
         display: flex;
         justify-content: center;
         position: absolute;
         overflow: hidden;
+        top: 0;
         left: 0;
-        top: 110px;
         width: 100%;
         height: 0;
         padding: 0;
@@ -149,11 +180,11 @@ header{
     }
     
     /* show the menu when active */
-    .nav_links_mobile ul.active{
-        height: 100px;
+    .nav-links-mobile ul.active {
+        height: 200px;
     }
 
-    .nav_links_mobile ul a{
+    .nav-links-mobile ul a {
         padding: 10px;
         color: white;
         text-decoration: none;
@@ -162,5 +193,23 @@ header{
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        background-color: black;
+        transition: all 0.3s ease;
+    }
+
+    .overlay.active{
+        visibility: visible;
+        opacity: 0.5;
     }
 }

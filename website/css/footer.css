@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     width: 100%;
     padding: 30px 0;
@@ -6,7 +6,7 @@ footer{
     color: white;
 }
 
-footer a{
+footer a {
     width: fit-content;
     padding: 10px 0;
     font-size: 14px;
@@ -14,133 +14,133 @@ footer a{
     color: inherit;
 }
 
-footer a:hover{
+footer a:hover {
     text-decoration: none;
 }
 
 /* LEFT CONTENT */
 
-.left_content{
+.left-content {
     display: flex;
     flex-direction: column;
     width: 47%;
     padding-left: 3%;
 }
 
-.left_content h2{
+.left-content h2 {
     font-weight: 800;
     margin: 0;
 }
 
-.social_icons{
+.social-icons {
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
 
-.social_icons a{
+.social-icons a {
     padding-right: 20px;
 }
 
-.social_icons a svg{
+.social-icons a svg {
     opacity: 0.8;
     color: white;
     transition: opacity 0.3s ease;
 }
 
-.social_icons a:hover svg{
+.social-icons a:hover svg {
     opacity: 1;
 }
 
-.facebook_icon{
+.facebook-icon {
     width: 30px;
 }
 
-.x_icon{
+.x-icon {
     width: 25px;
 }
 
-.instagram_icon{
+.instagram-icon {
     width: 25px;
 }
 
-.linkedin_icon{
+.linkedin-icon {
     width: 30px;
 }
 
-.bottom_information{
+.bottom-information {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 220px;
 }
 
-.bottom_information a{
+.bottom-information a {
     padding-right: 10px;
 }
 
 
 /* RIGHT CONTENT */
 
-.right_content{
+.right-content {
     display: flex;
     flex-direction: row;
     width: 50%;
 }
 
-.right_content div{
+.right-content div {
     display: flex;
     flex-direction: column;
     padding-right: 30px;
 }
 
-.right_content div a{
+.right-content div a {
     font-weight: 600;
 }
 
 
 /* BOTTOM INFORMATION */
 
-.bottom_information_mobile{
+.bottom-information-mobile {
     display: none;
 }
 
 /* in mobile */
-@media screen and (max-width: 768px){
-    footer{
+@media screen and (max-width: 768px) {
+    footer {
         flex-direction: column;
     }
 
-    footer a{
+    footer a {
         font-size: 13px;
     }
 
 
     /* LEFT CONTENT */
 
-    .left_content{
+    .left-content {
         width: 97%;
         justify-content: center;
         align-items: center;
     }
 
-    .left_content h2{
+    .left-content h2 {
         font-size: 20px;
     }
 
-    .bottom_information{
+    .bottom-information {
         display: none;
     }
 
 
     /* RIGHT CONTENT */
 
-    .right_content{
+    .right-content {
         width: 100%;
         padding: 50px 0;
     }
 
-    .right_content div{
+    .right-content div {
         padding-right: 0;
         padding: 0 20px;
     }
@@ -148,7 +148,7 @@ footer a:hover{
 
     /* BOTTOM INFORMATION */
 
-    .bottom_information_mobile{
+    .bottom-information-mobile {
         display: flex;
         justify-content: space-around;
     }

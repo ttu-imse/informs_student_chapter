@@ -1,4 +1,4 @@
-.background{
+.background {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,17 +12,17 @@
     color: white;
 }
 
-.background div h2{
+.background div h2 {
     text-align: center;
     margin: 0;
 }
 
-.background div h1{
+.background div h1 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.background div{
+.background div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,12 +33,12 @@
 }
 
 /* in mobile */
-@media screen and (max-width: 768px){
-    .background div h2{
+@media screen and (max-width: 768px) {
+    .background div h2 {
         font-size: 30px;
     }
 
-    .background div h1{
+    .background div h1 {
         font-size: 40px;
     }
 }

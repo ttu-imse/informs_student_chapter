@@ -1,5 +1,5 @@
-const staticHeader = document.getElementsByClassName("static_header")[0];
-const fixedHeader = document.getElementsByClassName("fixed_header")[0];
+const staticHeader = document.getElementsByClassName("static-header")[0];
+const fixedHeader = document.getElementsByClassName("fixed-header")[0];
 
 document.addEventListener("scroll", () => {
     if (window.scrollY > staticHeader.offsetHeight){
