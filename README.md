@@ -53,6 +53,12 @@ npm run dev
 The website will be available in your browser at:
 http://127.0.0.1:3000/ and your changes won't affect the website that is already published and running.
 
+- Alternatively, for opening a server in LAN run the following command:
+```
+nodemon server.js
+```
+It will allow you to open the website in every machine connected to your current network.
+
 ### Step 5: Edit and Preview
 - Open the index.html file in your code editor.
 - Make your changes.
