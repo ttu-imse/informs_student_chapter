@@ -97,15 +97,70 @@ header{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle text shadow on hover */
 }
 
-/* For smaller screens: Make links stack vertically */
-@media (max-width: 768px){
+.nav_links_mobile{
+    display: none;
+}
+
+/* in mobile */
+@media screen and (max-width: 768px){
     header{
-        flex-direction: column; /* Stack logo and links vertically */
-        align-items: flex-start; /* Align items to the left */
+        height: 110px;
+    }
+
+    .static_header{
+        display: none;
+    }
+    
+    .logo_lockup img{
+        max-width: auto;
+        height: 70px;
     }
 
     .nav_links{
-        justify-content: flex-start; /* Align links to the left */
-        gap: 10px; /* Adjust gap for smaller screens */
+        display: none;
+    }
+
+    .nav_links_mobile{
+        display: block;
+    }
+
+    .menu-icon{
+        width: fit-content;
+        padding: 3px 7px;
+        margin-right: 10px;
+        font-size: 24px;
+        color: white;
+        background: #333;
+    }
+
+    .nav_links_mobile ul{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        top: 110px;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        background: #444;
+        transition: height 0.3s ease-out;
+    }
+    
+    /* show the menu when active */
+    .nav_links_mobile ul.active{
+        height: 100px;
+    }
+
+    .nav_links_mobile ul a{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 }

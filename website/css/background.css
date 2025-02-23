@@ -12,6 +12,10 @@
     color: white;
 }
 
+.background div h1{
+    text-transform: uppercase;
+}
+
 .background div{
     display: flex;
     flex-direction: column;
