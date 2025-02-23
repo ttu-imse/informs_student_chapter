@@ -97,3 +97,59 @@ footer a:hover{
 .right_content div a{
     font-weight: 600;
 }
+
+
+/* BOTTOM INFORMATION */
+
+.bottom_information_mobile{
+    display: none;
+}
+
+/* in mobile */
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+    }
+
+    footer a{
+        font-size: 13px;
+    }
+
+
+    /* LEFT CONTENT */
+
+    .left_content{
+        width: 97%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left_content h2{
+        font-size: 20px;
+    }
+
+    .bottom_information{
+        display: none;
+    }
+
+
+    /* RIGHT CONTENT */
+
+    .right_content{
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .right_content div{
+        padding-right: 0;
+        padding: 0 20px;
+    }
+
+
+    /* BOTTOM INFORMATION */
+
+    .bottom_information_mobile{
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -12,7 +12,13 @@
     color: white;
 }
 
+.background div h2{
+    text-align: center;
+    margin: 0;
+}
+
 .background div h1{
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -21,10 +27,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 10%;
+    margin: 10%;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.background div h2{
-    margin: 0;
+/* in mobile */
+@media screen and (max-width: 768px){
+    .background div h2{
+        font-size: 30px;
+    }
+
+    .background div h1{
+        font-size: 40px;
+    }
 }

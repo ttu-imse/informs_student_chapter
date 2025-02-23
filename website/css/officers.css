@@ -1,0 +1,29 @@
+.officers_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    max-width: 900px; /* Adjust width if needed */
+    margin: auto; /* Center the section */
+}
+
+.officer{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.officer img{
+    width: 300px;    /* Fixed width */
+    height: 400px;   /* Fixed height to create a uniform size */
+    object-fit: cover; /* Ensures the image fills the box and crops the excess */
+    max-height: 400px; /* Prevents the height from growing beyond the set value */
+}
+
+/* in mobile */
+@media screen and (max-width: 768px){
+    .officers_list{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

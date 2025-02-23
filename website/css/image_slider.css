@@ -1,10 +1,10 @@
 .image_slider{
-    width: 60%;
+    position: relative;
+    max-width: 20cm;
     margin: 40px auto;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    position: relative;
 }
 
 .slides{
