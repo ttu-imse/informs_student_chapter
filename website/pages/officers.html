@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/background.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/officers.css">
 </head>
 
@@ -51,23 +52,30 @@
           <span></span>
           <span></span>
         </div>
-        <ul>
-          <a href="website/pages/officers.html">Officers</a>
-          <a href="https://1drv.ms/x/c/53908bd39e09cffb/EWoArBOuGLFKvD7dmRVRWIQBDZBeXEuU4B-mZUsA73FsDw?e=Clxv75">Events</a>
-          <a href="https://www.youtube.com/watch?v=2luoOOsjRb4">Considering a PhD?</a>
-        </ul>
+
+        <div class="menu">
+          <div class="menu-main">
+            <a href="index.html">Home</a>
+            <a href="website/pages/officers.html">Officers</a>
+            <a href="https://1drv.ms/x/c/53908bd39e09cffb/EWoArBOuGLFKvD7dmRVRWIQBDZBeXEuU4B-mZUsA73FsDw?e=Clxv75">Events</a>
+            <a href="https://www.youtube.com/watch?v=2luoOOsjRb4">Considering a PhD?</a>
+          </div>
+
+          <h4>Additional Resources</h4>
+          
+          <div class="menu-additional">
+            <a href="https://www.ttu.edu" tabindex="1" aria-label="TTU Home Page">TTU Home</a>
+            <a href="http://directory.texastech.edu/" tabindex="2" aria-label="TTU System Online Directory">Directory</a>
+            <a href="http://raiderlink.ttu.edu/" tabindex="3" aria-label="Raiderlink">Raiderlink</a>
+            <a href="http://www.ttu.edu/site/" tabindex="4" aria-label="Site Index">A-Z Index</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Main -->
   <main>
-    <div class="background">
-      <div>
-        <h1>Meet Our Officers</h1>
-      </div>
-    </div>
-
     <div class="main-content">
       <h4>
         Our leadership team is dedicated to mantain an inclusive and professional environment for students interested in operations research, management sciences, and analytics.
@@ -214,6 +222,9 @@
 
   
   <!-- scripts -->
+  <script>
+    const page = 1;
+  </script>
   <script src="../js/fixed_header.js"></script>
   <script src="../js/menu_bar.js"></script>
 </body>

@@ -1,6 +1,10 @@
-const menu = document.querySelector(".nav-links-mobile ul");
 const menuIcon = document.querySelector(".menu-icon");
+const menu = document.querySelector(".menu");
+const menu_main_content = document.querySelector(".menu-main");
 const overlay = document.querySelector(".overlay");
+
+// color menu main content depending on page
+menu_main_content.children[page].style.color = 'red';
 
 // toggles menu bar
 function toggleMenu(){
