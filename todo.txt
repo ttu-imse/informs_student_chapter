@@ -1,0 +1,2 @@
+- change hero to inspiration
+- put slider in hero
