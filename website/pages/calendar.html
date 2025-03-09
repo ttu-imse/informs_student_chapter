@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Calendar</title>
+    <link rel="stylesheet" href="../css/calendar.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button">Login</button>
+        <p id="login-error" style="color: red; display: none;">Invalid username or password.</p>
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar">
+        <h1>Calendar</h1>
+        <div class="month">
+            <button id="prev-month">&#10094;</button>
+            <span id="current-month">Month</span>
+            <button id="next-month">&#10095;</button>
+        </div>
+        <div class="days">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+
+    <!-- Modal for editing activities -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-date">Edit Activities</h2>
+            <textarea id="activity-input" rows="10"></textarea>
+            <button id="save-activity">Save</button>
+        </div>
+    </div>
+
+    <script src="../js/calendar.js"></script>
+</body>
+</html>

@@ -1,100 +1,91 @@
 header {
     width: 100%;
-    height: 150px;
+    height: 130px;
     color: #333;
     background-color: white;
 }
 
 .static-header {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     position: static;
     width: 100%;
     height: 40px;
+    letter-spacing: 1px;
+    background-color: black;
+}
+
+.static-header h5 {
+    padding-left: 2%;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
 }
 
 .static-header a {
     margin-right: 1vw;
     font-size: 11.5px;
-    color: #555;
-    box-shadow: 0 0 0 #1b1b1b;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
     transition: all .4s ease;
 }
 
 .ttu-translate-trigger {
     padding-left: 18px;
-    background: url('../assets/icons/google-translate.svg') no-repeat left center;
 }
 
 .fixed-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100vw;
-    height: 110px;
+    height: 90px;
     z-index: 100;
     background-color: white;
     border-bottom: 1px solid #e6e6e6;
 }
 
 .logo-lockup {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5%;
-    padding-left: 2%;
-}
-
-.logo-lockup a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    padding: 0 2%;
 }
 
 .logo-lockup img {
-    max-width: auto;
-    height: 90px;
+    height: 80px;
 }
 
-.logo-lockup h1 {
-    display: inline;
-    font-family: ITC Charter W01, Georgia, Garamond, serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1em;
-    width: 100%;
-}
 
-/* Navigation Links Container */
 .nav-links {
-    display: flex; /* Arrange links horizontally */
-    justify-content: center; /* Align everything to the left */
-    flex-wrap: wrap; /* Allow links to wrap to the next line if needed */
-    gap: 50px; /* Add spacing between links */
-    flex-grow: 1; /* Allow links to grow and use available space */
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
 }
 
-/* Navigation Links */
+
 .nav-links a {
-    text-decoration: none; /* Remove underlines */
-    color: #333; /* Dark color for links */
-    font-size: 18px; /* Adjust font size */
-    font-family: 'Arial', sans-serif; /* Change font family */
-    font-weight: 600; /* Make links semi-bold */
-    text-transform: uppercase; /* Make the text uppercase */
-    letter-spacing: 1px; /* Add spacing between letters */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
-    white-space: nowrap; /* Prevent text wrapping within a single link */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: red; /* Change color on hover */
-    text-decoration: underline;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Add subtle text shadow on hover */
+    color: red;
+}
+
+.nav-links a h2{
+    margin: 0 0 0 10px;
+    opacity: 0;
+    transform: translateY(-2px);
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover h2{
+    opacity: 1;
 }
 
 .nav-links-mobile {
@@ -104,7 +95,7 @@ header {
 /* in mobile */
 @media screen and (max-width: 768px) {
     header {
-        height: 110px;
+        height: 90px;
     }
 
     .static-header {
@@ -138,7 +129,7 @@ header {
     }
     
     .menu-icon.active {
-        transform: translate(0, 237px);
+        transform: translate(0, 247px);
         transition: all 0.3s ease 0.02s;
     }
 
