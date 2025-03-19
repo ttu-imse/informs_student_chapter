@@ -55,13 +55,11 @@ header {
     height: 80px;
 }
 
-
 .nav-links {
     display: flex;
     justify-content: space-around;
     flex: 1;
 }
-
 
 .nav-links a {
     display: flex;
@@ -90,6 +88,68 @@ header {
 
 .nav-links-mobile {
     display: none;
+    z-index: 11;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0;
+    margin-right: 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    font: inherit;
+    background-color: #333;
+    color: white;
+}
+
+.login h4{
+    margin: 0;
+    padding: 0 5px;
+}
+
+.login svg{
+    width: 40px;
+}
+
+.login-form {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 90px;
+    width: 200px;
+    padding: 20px;
+    background: #333;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form.active {
+    display: block;
+}
+
+.login-form input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: white;
+    color: red;
 }
 
 /* in mobile */
@@ -100,6 +160,10 @@ header {
 
     .static-header {
         display: none;
+    }
+
+    .fixed-header {
+        justify-content: space-around;
     }
     
     .logo-lockup img {
@@ -113,7 +177,6 @@ header {
 
     .nav-links-mobile {
         display: block;
-        z-index: 11;
     }
 
     .menu-icon {
@@ -154,5 +217,9 @@ header {
 
     .menu-icon.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5.5px, -5.5px);
+    }
+
+    .login {
+        display: none;
     }
 }
