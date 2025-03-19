@@ -6,16 +6,12 @@ https://ttu-imse.github.io/informs_student_chapter/
 
 # Project Setup Guide
 
----
-
 ## Requirements
 
 Before you begin, ensure you have the following tools installed:
 - **Code Editor** (e.g., Visual Studio Code)
 - **npm** (Node Package Manager)
 - **git**
-
----
 
 ## Running the Project
 
